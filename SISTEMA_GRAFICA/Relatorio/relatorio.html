@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Vendas - Gráfica</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Gráfica</h1>
+        <ul class="nav-links">
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#vendas">Vendas</a></li>
+            <li><a href="#orcamentos">Orçamentos</a></li>
+            <li><a href="#relatorios">Relatórios</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+        </ul>
+    </nav>
+
+    <!-- Dashboard principal -->
+    <main class="dashboard" id="dashboard">
+        <!-- Conteúdo do dashboard -->
+    </main>
+
+    <!-- Seção de Relatórios -->
+    <section id="relatorios" class="report-section">
+        <h2>Relatório Mensal de Entradas e Saídas</h2>
+        <div class="report-content" id="report-content">
+            <h3>Resumo de Entradas e Saídas</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Descrição</th>
+                        <th>Valor (R$)</th>
+                        <th>Quantidade</th>
+                        <th>Data</th>
+                    </tr>
+                </thead>
+                <tbody id="report-table-body">
+                    <!-- As linhas de entradas e saídas serão geradas aqui -->
+                </tbody>
+            </table>
+            <p><strong>Total Entradas:</strong> R$ <span id="total-entradas">0,00</span></p>
+            <p><strong>Total Saídas:</strong> R$ <span id="total-saidas">0,00</span></p>
+        </div>
+        <button onclick="downloadPDF()">Baixar PDF</button>
+        <button onclick="window.print()">Imprimir</button>
+    </section>
+
+    <script src="/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+</body>
+</html>

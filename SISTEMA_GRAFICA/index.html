@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Vendas - Gráfica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Gráfica</h1>
+        <ul class="nav-links">
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#vendas">Vendas</a></li>
+            <li><a href="#orcamentos">Orçamentos</a></li>
+            <li><a href="#relatorios">Relatórios</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+        </ul>
+    </nav>
+
+    <main class="dashboard">
+        <h2>Dashboard de Vendas</h2>
+        <div class="filter-buttons">
+            <button onclick="updateDashboard('dia')">Dia</button>
+            <button onclick="updateDashboard('semana')">Semana</button>
+            <button onclick="updateDashboard('mes')">Mês</button>
+        </div>
+        <div class="sales-info">
+            <h3>Vendas do Dia</h3>
+            <p>Total de Vendas: <span id="sales-count">0</span></p>
+            <p>Valor Total: R$ <span id="sales-value">0,00</span></p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

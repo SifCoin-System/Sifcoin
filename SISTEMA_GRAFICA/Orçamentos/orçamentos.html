@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Vendas - Gráfica</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Gráfica</h1>
+        <ul class="nav-links">
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#vendas">Vendas</a></li>
+            <li><a href="#orcamentos">Orçamentos</a></li>
+            <li><a href="#relatorios">Relatórios</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+        </ul>
+    </nav>
+
+    <main class="dashboard" id="dashboard">
+        <h2>Dashboard de Vendas</h2>
+        <div class="filter-buttons">
+            <button onclick="updateDashboard('dia')">Dia</button>
+            <button onclick="updateDashboard('semana')">Semana</button>
+            <button onclick="updateDashboard('mes')">Mês</button>
+        </div>
+        <div class="sales-info">
+            <h3>Vendas do Dia</h3>
+            <p>Total de Vendas: <span id="sales-count">0</span></p>
+            <p>Valor Total: R$ <span id="sales-value">0,00</span></p>
+        </div>
+        <div id="budget-list" class="budget-list">
+            <h3>Orçamentos Pendentes</h3>
+            <!-- Orçamentos criados aparecerão aqui -->
+        </div>
+    </main>
+
+    <section id="orcamentos" class="budget-form-section">
+        <h2>Criar Novo Orçamento</h2>
+        <form class="budget-form" onsubmit="createBudget(event)">
+            <label for="produto-orcamento">Produto:</label>
+            <select id="produto-orcamento" name="produto-orcamento">
+                <option value="cartao-visita">Cartão de Visita</option>
+                <option value="flyer">Flyer</option>
+                <option value="banner">Banner</option>
+                <option value="adesivo">Adesivo</option>
+                <!-- Outros produtos sugeridos podem ser adicionados aqui -->
+            </select>
+
+            <label for="quantidade-orcamento">Quantidade:</label>
+            <input type="number" id="quantidade-orcamento" name="quantidade-orcamento" min="1" required>
+
+            <label for="valor-orcamento">Valor Estimado:</label>
+            <input type="text" id="valor-orcamento" name="valor-orcamento" placeholder="R$ 0,00" required>
+
+            <button type="submit">Criar Orçamento</button>
+        </form>
+    </section>
+
+    <script src="/script.js"></script>
+</body>
+</html>

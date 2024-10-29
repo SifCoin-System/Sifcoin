@@ -1,0 +1,361 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e0f2f1; /* Azul claro */
+}
+
+.navbar {
+    width: 100%;
+    background-color: #1565c0; /* Azul escuro */
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    font-size: 1.5em;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.dashboard {
+    width: 80%;
+    max-width: 1200px;
+    margin-top: 30px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard h2 {
+    margin-bottom: 20px;
+    color: #1565c0; /* Azul escuro */
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-buttons button {
+    padding: 10px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #1976d2; /* Azul médio */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.filter-buttons button:hover {
+    background-color: #1e88e5; /* Azul mais claro */
+}
+
+.sales-info {
+    text-align: center;
+}
+
+.sales-info h3 {
+    font-size: 1.2em;
+    color: #1565c0; /* Azul escuro */
+}
+
+.sales-info p {
+    font-size: 1.1em;
+    color: #444;
+}
+.sales-form-section {
+    width: 80%;
+    max-width: 1200px;
+    margin-top: 30px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sales-form-section h2 {
+    color: #1565c0; /* Azul escuro */
+    margin-bottom: 20px;
+}
+
+.sales-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sales-form label {
+    font-size: 1em;
+    color: #444;
+}
+
+.sales-form input,
+.sales-form select {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.sales-form input:focus,
+.sales-form select:focus {
+    border-color: #1565c0; /* Azul escuro */
+    outline: none;
+}
+
+.sales-form button {
+    padding: 10px 15px;
+    font-size: 1em;
+    background-color: #1976d2; /* Azul médio */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sales-form button:hover {
+    background-color: #1e88e5; /* Azul mais claro */
+}
+/* style.css */
+.budget-form-section {
+    width: 80%;
+    max-width: 1200px;
+    margin-top: 30px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.budget-form-section h2 {
+    color: #1565c0; /* Azul escuro */
+    margin-bottom: 20px;
+}
+
+.budget-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.budget-form label {
+    font-size: 1em;
+    color: #444;
+}
+
+.budget-form input,
+.budget-form select {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.budget-form button {
+    padding: 10px 15px;
+    font-size: 1em;
+    background-color: #1976d2; /* Azul médio */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.budget-form button:hover {
+    background-color: #1e88e5; /* Azul mais claro */
+}
+
+.budget-list {
+    margin-top: 20px;
+}
+
+.budget-list h3 {
+    color: #1565c0; /* Azul escuro */
+}
+
+.budget-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.budget-item button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #4caf50; /* Verde para Aprovar */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.budget-item .delete-btn {
+    background-color: #f44336; /* Vermelho para Excluir */
+}
+/* style.css */
+.report-section {
+    width: 80%;
+    max-width: 1200px;
+    margin-top: 30px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.report-section h2 {
+    color: #1565c0;
+    margin-bottom: 20px;
+}
+
+.report-content h3 {
+    color: #444;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f1f1f1;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    font-size: 1em;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1e88e5;
+}
+
+/* style.css */
+.products-section {
+    width: 80%;
+    max-width: 800px;
+    margin-top: 30px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.products-section h2, .products-section h3 {
+    color: #1565c0;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #333;
+}
+
+input[type="text"], input[type="number"], textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    font-size: 1em;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1e88e5;
+}
+
+.price-tier {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.price-tier label {
+    display: block;
+    margin: 0;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+ul li {
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
